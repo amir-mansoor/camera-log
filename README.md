@@ -1,1 +1,1 @@
-# react-logo
+# camera-logo
