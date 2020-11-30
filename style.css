@@ -1,0 +1,97 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.center-div {
+  width: 100vw;
+  height: 100vh;
+  background-color: hsl(231, 27%, 40%);
+  display: grid;
+  place-items: center;
+}
+
+.camera {
+  width: 50%;
+  height: 40%;
+  background: black;
+  border-radius: 4%;
+  position: relative;
+  display: grid;
+  place-items: center;
+  box-shadow: 1px 0 1px 2px hsla(40, 10%, 55%, 1);
+  filter: brightness(90%);
+  transition: 2s;
+  transform: scale(0);
+}
+
+.popup {
+  transform: scale(1);
+}
+
+.camera::before {
+  content: "";
+  width: 10%;
+  height: 5%;
+  background-color: white;
+  position: absolute;
+  top: -10px;
+  left: 5px;
+  overflow: hidden;
+  border-radius: 20%;
+}
+
+.lens {
+  width: 20%;
+  height: 30%;
+  border-radius: 50%;
+  background: white;
+  position: relative;
+  display: grid;
+  place-items: center;
+  transform: scale(1.1);
+}
+
+.lens::before {
+  content: "";
+  width: 85%;
+  height: 85%;
+  background-color: black;
+  position: absolute;
+  border-radius: 41px;
+  display: grid;
+  place-items: center;
+}
+
+.lens::after {
+  /*Copy*/
+  content: "";
+  width: 70%;
+  height: 70%;
+  background-color: white;
+  position: absolute;
+  border-radius: 41px;
+}
+
+.image-check {
+  width: 10%;
+  height: 20%;
+  background: white;
+  position: absolute;
+  right: 8px;
+  top: 10px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+
+.image-check::before {
+  /*Copy*/
+  content: "";
+  width: 70%;
+  height: 70%;
+  background-color: black;
+  position: absolute;
+  border-radius: 41px;
+}
